@@ -7,7 +7,9 @@ def get_search_url():
 
     search_urls = {
         "google": "https://www.google.com/search?q="
-                  "+django+{{ exception_value|force_escape }}"
+                  "+django+{{ exception_value|force_escape }}",
+        "stackoverflow": "http://stackoverflow.com/search?q="
+                         "{{ exception_value|force_escape }}",
     }
 
     search_url = getattr(
@@ -25,7 +27,7 @@ def _patch_django_debug_view():
             <a href="{}"
                  target="_blank" 
                  style="color: #f5f5f5; text-decoration: none; font-size: 1rem; font-weight: bold;">
-                 Search on Google
+                 Search the solve
              </a>
         </button>
     """.format(get_search_url())

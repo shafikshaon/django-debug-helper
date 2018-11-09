@@ -4,7 +4,7 @@ from distutils.core import setup
 
 setuptools.setup(
     name="django-debug-helper",
-    version="1.0.0",
+    version="1.1.0",
     author="Mohd. Shafikur Rahman",
     author_email="shafikshaon@gmail.com",
     description="Django debug error related exception search on Google/ Stack Overflow.",
