@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="django-debug-helper",
-    version="1.1.4",
+    version="1.1.6",
     author="Mohd. Shafikur Rahman",
     author_email="shafikshaon@gmail.com",
     description="Django debug error related exception search on Google/ Stack Overflow.",
